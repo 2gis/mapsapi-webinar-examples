@@ -57,8 +57,12 @@
             });
             document.querySelector('#case-4 button').onclick = function () {
                 DG.popup()
-                    .setLatLng([54.98, 82.898])
-                    .setContent('<h3>Заголовок</h3><p>Nulla neque dolor, sagittis eget, iaculis quis, molestie non, velit. Nullam tincidunt adipiscing enim.</p>')
+                    .setLatLng([54.9795, 82.898])
+                    .setContent('<h3>Заголовок</h3>' +
+                        '<p>Nulla neque dolor, sagittis eget, iaculis qui' +
+                        's, molestie non, velit. Nullam tincidunt adipiscing enim.</p>' +
+                        '<img src="http://placehold.it/200x100">' +
+                        '<p>Fusce convallis metus id felis luctus adipiscing. Aliquam eu nunc. Nunc nec neque.</p>')
                     .openOn(map4);
             };
         })();
