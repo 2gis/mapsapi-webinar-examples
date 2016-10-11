@@ -127,7 +127,7 @@
         // Cluster.
         DG.then(function() {
             // загрузка кода модуля
-            return DG.plugin('http://2gis.github.io/mapsapi/vendors/Leaflet.markerCluster/leaflet.markercluster-src.js');
+            return DG.plugin('https://2gis.github.io/mapsapi/vendors/Leaflet.markerCluster/leaflet.markercluster-src.js');
         }).then(function() {
             var map6 = DG.map('map-6', {
                 center: DG.latLng(54.92, 82.82),
@@ -149,7 +149,7 @@
         });
         // Heat map.
         DG.then(function() {
-            return DG.plugin('http://2gis.github.io/mapsapi/vendors/HeatLayer/heatLayer.js');
+            return DG.plugin('https://2gis.github.io/mapsapi/vendors/HeatLayer/heatLayer.js');
         }).then(function() {
             var map7 = DG.map('map-7', {
                 center: DG.latLng(54.89, 82.45),
