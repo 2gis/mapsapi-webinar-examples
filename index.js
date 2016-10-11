@@ -172,12 +172,35 @@
             window.map = map;
 
         })();
+        // Geolocation
+        (function () {
+            var map = DG.map('map-7', {
+                'center': [54.98, 82.89],
+                'zoom': 13
+            });
+            function onLocationFound(e) {
+                var radius = e.accuracy / 2;
+
+                DG.marker(e.latlng).addTo(map)
+                    .bindPopup("Возможно вы находитесь здесь").openPopup();
+
+                DG.circle(e.latlng, radius).addTo(map);
+
+            }
+            map.on('locationfound', onLocationFound);
+
+            document.querySelector('#case-7 button').onclick = function () {
+                map.locate({setView: true, maxZoom: 18});
+
+            };
+
+        })();
         // Cluster.
         DG.then(function() {
             // загрузка кода модуля
             return DG.plugin('https://2gis.github.io/mapsapi/vendors/Leaflet.markerCluster/leaflet.markercluster-src.js');
         }).then(function() {
-            var map = DG.map('map-7', {
+            var map = DG.map('map-8', {
                 center: DG.latLng(54.92, 82.82),
                 zoom: 12
             });
@@ -199,7 +222,7 @@
         DG.then(function() {
             return DG.plugin('https://2gis.github.io/mapsapi/vendors/HeatLayer/heatLayer.js');
         }).then(function() {
-            var map = DG.map('map-8', {
+            var map = DG.map('map-9', {
                 center: DG.latLng(54.89, 82.45),
                 zoom: 10
             });
@@ -210,7 +233,7 @@
         DG.then(function() {
             return DG.plugin('leaflet.hotline.js');
         }).then(function() {
-            var map8 = DG.map('map-9', {
+            var map8 = DG.map('map-10', {
                 'center': [54.9805, 82.898],
                 'zoom': 13
             });
