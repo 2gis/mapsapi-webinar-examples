@@ -13,8 +13,9 @@
         .panel, .panel-heading, .btn {
             border-radius: 0;
         }
-        .panel {
-            box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.3);
+        .panel-container {
+            padding-top: 70px;
+            margin-top: -70px;
         }
         .btn {
             border: none;
@@ -37,83 +38,103 @@
         <a class="navbar-brand" href="#case-9">Тепловая карта</a>
         <a class="navbar-brand" href="#case-10">Градиентные линии</a>
     </nav>
-    <div class="panel panel-primary" id="case-1">
-        <div class="panel-heading">Маркеры</div>
-        <div class="panel-body">
-            <p>Возможность моказать маркеры. Кликнете по карте, для добавления новых маркеров.</p>
-            <div id="map-1" style="width: auto; height: 350px;"></div>
+    <div class="panel-container" id="case-1">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Маркеры</div>
+            <div class="panel-body">
+                <p>Возможность моказать маркеры. Кликнете по карте, для добавления новых маркеров.</p>
+                <div id="map-1" style="width: auto; height: 350px;"></div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-2">
-        <div class="panel-heading">Входы</div>
-        <div class="panel-body">
-            <p>Возможность моказать входы. Нажмите на кнопку, что бы показать входы.</p>
-            <div id="map-2" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
-            <button type="button" class="btn btn-primary">Показать входы</button>
+    <div class="panel-container" id="case-2">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Входы</div>
+            <div class="panel-body">
+                <p>Возможность моказать входы. Нажмите на кнопку, что бы показать входы.</p>
+                <div id="map-2" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
+                <button type="button" class="btn btn-primary">Показать входы</button>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-3">
-        <div class="panel-heading">Пробки</div>
-        <div class="panel-body">
-            <p>Возможность включить слой пробок. Нажмите на кнопку, что бы показать слой пробок.</p>
-            <div id="map-3" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
-            <button type="button" class="btn btn-primary">Показать пробки</button>
+    <div class="panel-container" id="case-3">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Пробки</div>
+            <div class="panel-body">
+                <p>Возможность включить слой пробок. Нажмите на кнопку, что бы показать слой пробок.</p>
+                <div id="map-3" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
+                <button type="button" class="btn btn-primary">Показать пробки</button>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-4">
-        <div class="panel-heading">Popup's</div>
-        <div class="panel-body">
-            <p>Возможность показать всплывающие окна.</p>
-            <div id="map-4" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
-            <button type="button" class="btn btn-primary">Показать Popup</button>
+    <div class="panel-container" id="case-4">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Popup's</div>
+            <div class="panel-body">
+                <p>Возможность показать всплывающие окна.</p>
+                <div id="map-4" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
+                <button type="button" class="btn btn-primary">Показать Popup</button>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-5">
-        <div class="panel-heading">Геометрии</div>
-        <div class="panel-body">
-            <p>Возможность показывать геометрические фигуры</p>
-            <div id="map-5" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
-            <button type="button" class="btn btn-primary show-circle">Показать круг</button>
-            <button type="button" class="btn btn-primary show-line">Показать линию</button>
-            <button type="button" class="btn btn-primary show-rectangle">Показать прямоугольник</button>
-            <button type="button" class="btn btn-primary show-polygon">Показать многоугольник</button>
+    <div class="panel-container" id="case-5">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Геометрии</div>
+            <div class="panel-body">
+                <p>Возможность показывать геометрические фигуры</p>
+                <div id="map-5" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
+                <button type="button" class="btn btn-primary show-circle">Показать круг</button>
+                <button type="button" class="btn btn-primary show-line">Показать линию</button>
+                <button type="button" class="btn btn-primary show-rectangle">Показать прямоугольник</button>
+                <button type="button" class="btn btn-primary show-polygon">Показать многоугольник</button>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-6">
-        <div class="panel-heading">Маршруты</div>
-        <div class="panel-body">
-            <p>Анимированная линия маршрута</p>
-            <div id="map-6" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
-            <button type="button" class="btn btn-primary">Показать маршрут</button>
+    <div class="panel-container" id="case-6">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Маршруты</div>
+            <div class="panel-body">
+                <p>Анимированная линия маршрута</p>
+                <div id="map-6" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
+                <button type="button" class="btn btn-primary">Показать маршрут</button>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-7">
-        <div class="panel-heading">Геолокация</div>
-        <div class="panel-body">
-            <p>Возможность найти Вас на карте</p>
-            <div id="map-7" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
-            <button type="button" class="btn btn-primary">Найти меня</button>
+    <div class="panel-container" id="case-7">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Геолокация</div>
+            <div class="panel-body">
+                <p>Возможность найти Вас на карте</p>
+                <div id="map-7" style="width: auto; height: 350px; margin-bottom: 20px;"></div>
+                <button type="button" class="btn btn-primary">Найти меня</button>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-8">
-        <div class="panel-heading">Кластеризаия маркеров</div>
-        <div class="panel-body">
-            <p>Является дополнительным модулем</p>
-            <div id="map-8" style="width: auto; height: 350px;"></div>
+    <div class="panel-container" id="case-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Кластеризаия маркеров</div>
+            <div class="panel-body">
+                <p>Является дополнительным модулем</p>
+                <div id="map-8" style="width: auto; height: 350px;"></div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-9">
-        <div class="panel-heading">Тепловая карта</div>
-        <div class="panel-body">
-            <p>Является дополнительным модулем</p>
-            <div id="map-9" style="width: auto; height: 350px;"></div>
+    <div class="panel-container" id="case-9">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Тепловая карта</div>
+            <div class="panel-body">
+                <p>Является дополнительным модулем</p>
+                <div id="map-9" style="width: auto; height: 350px;"></div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-primary" id="case-10">
-        <div class="panel-heading">Градиентные линии</div>
-        <div class="panel-body">
-            <p>Является дополнительным модулем</p>
-            <div id="map-10" style="width: auto; height: 350px;"></div>
+    <div class="panel-container" id="case-10">
+        <div class="panel panel-primary">
+            <div class="panel-heading">Градиентные линии</div>
+            <div class="panel-body">
+                <p>Является дополнительным модулем</p>
+                <div id="map-10" style="width: auto; height: 350px;"></div>
+            </div>
         </div>
     </div>
     <script src="index.js"></script>
